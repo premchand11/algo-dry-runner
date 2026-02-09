@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "language": "cpp",
+    "version": "0.1",
+    "entry_function": "main"
+  },
+  "timeline": [
+    {
+      "step": 1,
+      "line": 4,
+      "event": "write",
+      "stack": [
+        {
+          "frame_id": "f1",
+          "function": "main",
+          "locals": {
+            "sum": {
+              "type": "int",
+              "value": 0
+            }
+          }
+        }
+      ],
+      "heap": {
+        "arr_1": {
+          "kind": "array",
+          "datatype": "int",
+          "values": [
+            1,
+            2,
+            3
+          ],
+          "meta": {
+            "size": 3
+          }
+        }
+      },
+      "references": {
+        "sum": {
+          "ref": "arr_1",
+          "index": 0
+        }
+      },
+      "globals": {},
+      "stdout": [],
+      "annotations": []
+    }
+  ]
+}
